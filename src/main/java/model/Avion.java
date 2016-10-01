@@ -24,6 +24,8 @@ public class Avion {
     @ForeignCollectionField(foreignFieldName = "avion")
     private ForeignCollection<Roba> robe;
 
+    private Boolean spreman = true;
+
     public Avion(){
 
     }
@@ -64,6 +66,14 @@ public class Avion {
 
     public void setRobe(ForeignCollection<Roba> robe) {
         this.robe = robe;
+    }
+
+    public Boolean isSpreman() {
+        return spreman;
+    }
+
+    public void setSpreman(Boolean spreman) {
+        this.spreman = spreman;
     }
 
     @Override
